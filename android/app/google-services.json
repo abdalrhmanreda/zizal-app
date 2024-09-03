@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "531012176729",
+    "project_id": "al-zilzal",
+    "storage_bucket": "al-zilzal.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:531012176729:android:e8e12f41f099c11729da48",
+        "android_client_info": {
+          "package_name": "com.example.alzilzal"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCv_kezedvEkCrjBR0a_EtxD53P7vc-O4Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
