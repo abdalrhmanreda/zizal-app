@@ -1,0 +1,317 @@
+================================================================================
+                    AL-ZILZAL (الزلزال) PROJECT OVERVIEW
+================================================================================
+
+PROJECT NAME: Al-ZILZAL (الزلزال)
+PROJECT TYPE: Logistics and Delivery Management Mobile Application
+FRAMEWORK: Flutter (Cross-platform)
+VERSION: 1.0.0+1
+LAST UPDATE: September 3, 2024
+
+
+================================================================================
+                              KEY FEATURES
+================================================================================
+
+1. MULTI-ROLE USER SYSTEM
+   - Customer Portal: Create and manage delivery orders
+   - Sending Representative: Handle outgoing shipments
+   - Receiving Representative: Process incoming packages
+   - Sort Staff: Organize and distribute packages
+   - Profile Management: User account management
+
+2. ORDER MANAGEMENT
+   - Create Orders: Full order creation with customer details, addresses, pricing
+   - Track Orders: Real-time order status tracking
+   - Order History: View past and current orders
+   - QR Code Scanning: Quick order lookup and verification
+   - Barcode Generation: Generate tracking codes for orders
+   - Order Filtering: Filter by status, date, and other parameters
+
+3. DELIVERY OPERATIONS
+   - Area-based Delivery: Governorate and area selection
+   - Representative Assignment: Assign orders to delivery representatives
+   - Package Distribution: Sort and organize packages
+   - Status Updates: Multiple order statuses (pending, in transit, delivered, etc.)
+   - Receipt Management: Request and manage delivery receipts
+
+4. FINANCIAL FEATURES
+   - Amount Tracking: Monitor collection amounts (Cash on Delivery)
+   - Statements: Financial statements for customers and representatives
+   - Payment Types: Support for different payment methods
+   - Delivery Fees: Calculate and track delivery charges
+   - Client Amount Management: Track amounts owed to clients
+
+5. COMMUNICATION & NOTIFICATIONS
+   - Firebase Cloud Messaging: Push notifications for order updates
+   - WhatsApp Integration: Direct communication via WhatsApp
+   - In-app Notifications: Real-time notification center
+
+6. ADDITIONAL FEATURES
+   - Search Functionality: Global search across orders
+   - Statistics Dashboard: Analytics and metrics for orders and deliveries
+   - Banner Management: Promotional banners on home screen
+   - Complaint System: File complaints about orders
+   - PDF Generation: Generate PDF receipts and documents
+   - Sharing: Share order details
+
+7. LOCALIZATION & THEMES
+   - Bilingual Support: Arabic and English (RTL support)
+   - Dark/Light Mode: Theme switching
+   - Responsive Design: Adapts to different screen sizes
+
+
+================================================================================
+                              TIMELINE
+================================================================================
+
+Development Status: Version 1.0.0+1
+Last Major Update: September 3, 2024
+Project Age: 1+ years (Active as of October 2025)
+Git Status: Note - "finish but build not work" (last commit message)
+
+
+================================================================================
+                              TECH STACK
+================================================================================
+
+FRONTEND FRAMEWORK
+------------------
+- Flutter (SDK >= 3.1.4 < 4.0.0)
+- Dart Programming Language
+
+STATE MANAGEMENT
+------------------
+- BLoC/Cubit (flutter_bloc: ^8.1.5, bloc: ^8.1.4)
+- Provider (provider: ^6.1.2)
+
+ARCHITECTURE PATTERNS
+------------------
+- Clean Architecture (Feature-based structure)
+- Repository Pattern
+- Dependency Injection (get_it: ^7.6.7)
+- Freezed (freezed: ^2.5.2) for immutable models
+- Code Generation (freezed_annotation: ^2.4.1)
+
+BACKEND & APIs
+------------------
+- REST API: Django backend
+- Hosting: PythonAnywhere
+- Base URL: https://zilzal.pythonanywhere.com/api/v2/
+- HTTP Client: Dio (dio: ^5.4.3+1)
+- API Logging: Pretty Dio Logger (pretty_dio_logger: ^1.3.1)
+
+FIREBASE SERVICES
+------------------
+- Firebase Core (firebase_core: ^2.24.2)
+- Firebase Cloud Messaging (firebase_messaging: ^14.7.9)
+
+UI/UX LIBRARIES
+------------------
+- Material Design: Flutter's built-in material design
+- Screen Utilities: flutter_screenutil (^5.9.0) for responsive design
+- Google Fonts (google_fonts: ^6.2.0)
+- Font Awesome Icons (font_awesome_flutter: ^10.7.0)
+- Iconly Icons (flutter_iconly)
+- Icons Plus (icons_plus: ^5.0.0)
+- Cupertino Icons (cupertino_icons: ^1.0.8)
+- Shimmer Effect (shimmer: ^3.0.0) for loading states
+- Card Swiper (card_swiper: ^3.0.1) for banners
+- Dynamic Height Grid View (dynamic_height_grid_view: ^0.0.4)
+
+DATA & STORAGE
+------------------
+- Local Storage: SharedPreferences (shared_preferences: ^2.2.3)
+- Image Caching: CachedNetworkImage (cached_network_image: ^3.3.1)
+
+SCANNING & BARCODE
+------------------
+- QR/Barcode Scanner: Mobile Scanner (mobile_scanner: ^4.0.1)
+- Barcode Scanner: Flutter Barcode Scanner (flutter_barcode_scanner)
+- Barcode Widget (barcode_widget: ^2.0.4)
+- QR Scanner Overlay (qr_scanner_overlay: ^0.0.2)
+
+DOCUMENT GENERATION
+------------------
+- PDF Generation: PDF package (pdf: ^3.10.8)
+- Printing: Printing package (printing: ^5.12.0)
+
+NAVIGATION & UI COMPONENTS
+------------------
+- Custom Bottom Navigation (custom_navigation_bar: ^0.8.2)
+- Smooth Page Indicator (smooth_page_indicator: ^1.1.0)
+- Bottom Picker (bottom_picker: ^2.8.0)
+- Loading Indicator (loading_indicator: ^3.1.1)
+
+FUNCTIONALITY PACKAGES
+------------------
+- URL Launcher (url_launcher: ^6.2.5)
+- Share (share: ^2.0.4)
+- Permissions: Permission Handler (permission_handler: ^11.3.0)
+- Toast Messages: Fluttertoast (fluttertoast: ^8.2.5)
+- Conditional Builder (conditional_builder_null_safety: ^0.0.6)
+
+LOCALIZATION
+------------------
+- Internationalization (intl: ^0.19.0)
+- Intl Utils (intl_utils: ^2.8.7)
+- Flutter Localizations (flutter_localizations: SDK)
+
+UTILITIES
+------------------
+- Equatable (equatable: ^2.0.5) for value equality
+- Dartz (dartz: ^0.10.1) for functional programming
+- Archive (archive: ^3.6.1)
+- Args (args: ^2.5.0)
+- Win32 (win32: ^5.5.4)
+- Analyzer (analyzer: ^6.4.0)
+
+DEVELOPMENT TOOLS
+------------------
+- Flutter Lints (flutter_lints: ^2.0.0)
+- Flutter Launcher Icons (flutter_launcher_icons: ^0.13.1)
+- Rename Tool (rename: ^3.0.2)
+- Flutter Test (flutter_test: SDK)
+
+PLATFORM SUPPORT
+------------------
+✓ Android
+✓ iOS
+✓ Web
+✓ Windows
+✓ macOS
+✓ Linux
+
+
+================================================================================
+                          PROJECT STRUCTURE
+================================================================================
+
+lib/
+├── Core/                           # Shared components and utilities
+│   ├── components/                 # Reusable UI components
+│   ├── constatnts/                 # Constants (API, colors, strings, etc.)
+│   ├── errors/                     # Error handling
+│   ├── helpers/                    # Helper classes (cache, service locator, etc.)
+│   ├── themes/                     # App themes
+│   └── widgets/                    # Common widgets
+│
+├── Features/                       # Feature modules (Clean Architecture)
+│   ├── auth/                       # Authentication
+│   │   ├── data/                   # Data layer (models, repos)
+│   │   └── presentation/           # UI layer (screens, widgets)
+│   │
+│   ├── customer/                   # Customer features
+│   │   ├── create_order/           # Order creation
+│   │   ├── home/                   # Customer home
+│   │   ├── layout/                 # Customer layout
+│   │   └── statstics/              # Customer statistics
+│   │
+│   ├── orders/                     # Order management
+│   │   ├── data/                   # Order models and repos
+│   │   └── presentation/           # Order screens
+│   │
+│   ├── sending_representative/     # Sending rep features
+│   │   ├── home/                   # Home screen
+│   │   ├── layout/                 # Layout
+│   │   └── orders/                 # Order management
+│   │
+│   ├── receiving_representative/   # Receiving rep features
+│   │   └── home/                   # Package receiving
+│   │
+│   ├── sort_staff/                 # Sorting operations
+│   │   ├── data/                   # Sort data
+│   │   └── presentation/           # Sort UI
+│   │
+│   ├── profile/                    # User profile
+│   ├── search/                     # Search functionality
+│   ├── statments/                  # Financial statements
+│   └── notification/               # Notifications
+│
+├── config/                         # App configuration
+│   ├── route_path.dart             # Route definitions
+│   ├── router.dart                 # Route generation
+│   └── themes/                     # Theme configurations
+│
+├── generated/                      # Auto-generated files
+│   └── l10n/                       # Localization files
+│
+├── l10n/                           # Localization resources
+├── firebase_options.dart           # Firebase configuration
+├── alzilzal_app.dart              # Main app widget
+└── main.dart                       # Entry point
+
+
+================================================================================
+                          API ENDPOINTS
+================================================================================
+
+Base URL: https://zilzal.pythonanywhere.com/api/v2/
+Alternative: http://zilzal.pythonanywhere.com/api/v1/
+
+Notification URL: https://fcm.googleapis.com/fcm/
+WhatsApp URL: https://api.whatsapp.com/send?phone=
+
+Specific Endpoints:
+- Send Notification: /api/v1/SendNotification
+- Get Areas from Gov: /api/v1/areas/
+- Search Orders: /api/v1/orders/
+
+
+================================================================================
+                          DATA MODELS
+================================================================================
+
+Key Models Implemented:
+- LoginModel: User authentication
+- OrderModel: Order details with client info
+- CreateOrderModel: New order creation
+- AreasModel: Governorate and area data
+- BannersModel: Home screen banners
+- StatisticModel: Analytics data
+- ProfileModel: User profile information
+- ComplainModel: Complaint management
+- SearchModel: Search results
+- StatementsModel: Financial statements
+- RepOrdersModel: Representative orders
+- HistoryModel: Order history
+- CreateNewPackageModel: Package creation
+
+
+================================================================================
+                          NOTABLE FEATURES
+================================================================================
+
+1. FCM Token Management: Automatic device registration for push notifications
+2. BLoC Observer: Custom BLoC observer for state management debugging
+3. Service Locator: Dependency injection setup
+4. Cache Helper: Local data persistence
+5. Multi-language Support: Arabic (default) and English
+6. Theme Provider: Dynamic theme switching
+7. Responsive Design: Adapts to screen size (375x812 design base)
+8. Custom Navigation: Role-based navigation
+9. API Logger: Detailed API request/response logging
+10. Permission Handling: Camera, storage, and notification permissions
+
+
+================================================================================
+                          BUILD STATUS
+================================================================================
+
+Current Status: Development complete but build issues noted
+Last Commit: "finish but build not work"
+Version: 1.0.0+1 (Ready for production after build fixes)
+
+
+================================================================================
+                          CONTACT & REPOSITORY
+================================================================================
+
+Repository Owner: abdalrhmanreda
+Project Name: zizal-app
+Local Path: /Volumes/CodeX/text/zizal-app
+
+
+================================================================================
+                          END OF DOCUMENT
+================================================================================

@@ -1,7 +1,6 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-
 import 'intl/messages_all.dart';
 
 // **************************************************************************
@@ -1746,6 +1745,16 @@ class S {
     return Intl.message(
       'All',
       name: 'all',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Change Order Status`
+  String get change_order_status {
+    return Intl.message(
+      'Change Order Status',
+      name: 'change_order_status',
       desc: '',
       args: [],
     );

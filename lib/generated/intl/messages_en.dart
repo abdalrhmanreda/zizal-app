@@ -63,6 +63,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "barcode_hint": MessageLookupByLibrary.simpleMessage("Qr Code Number"),
         "barcode_validation":
             MessageLookupByLibrary.simpleMessage("Qr Code must be not empty"),
+        "change_order_status":
+            MessageLookupByLibrary.simpleMessage("Change Order Status"),
         "check_pass": MessageLookupByLibrary.simpleMessage(
             "Check old password and make the new one more strong"),
         "chooseDate": MessageLookupByLibrary.simpleMessage("Choose Date"),

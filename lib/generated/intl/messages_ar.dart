@@ -60,6 +60,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("رقم رمز الاستجابة السريعة"),
         "barcode_validation":
             MessageLookupByLibrary.simpleMessage("أدخل رمز الاستجابة السريعة"),
+        "change_order_status":
+            MessageLookupByLibrary.simpleMessage("تغيير حالة الطلب"),
         "check_pass": MessageLookupByLibrary.simpleMessage(
             "تأكد من كلمة المرور القديمة واجعل الجديدة اكثر قوة"),
         "chooseDate": MessageLookupByLibrary.simpleMessage("اختر التاريخ"),
